@@ -1,0 +1,132 @@
+/*
+     Name: Pui Yan Chan
+     Date: September 30, 2019
+     Section: CSE 154 AA
+     This is the style.css for my Creative Project 1.
+     It describes the presentation of about.html and photo-gallery.html pages.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+  background-image: url("img/terminal.gif");
+  /* Retrieved from https://imgur.com/gallery/VC03Kas */
+  background-repeat: no-repeat;
+  background-color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+h1 {
+  padding-top: 30px;
+  text-align: center;
+  color: #B5BD68;
+  font-size: 36px;
+}
+
+h2 {
+  color: #81A2BE;
+}
+
+h3 {
+  color: #5F819D;
+}
+
+img {
+  border-radius: 20px;
+}
+
+span {
+  color: #B5BD68;
+  font-weight: bold;
+}
+
+a {
+  color: #DE935F;
+}
+
+q {
+  font-size: 30px;
+  padding: 20px;
+}
+
+ol li {
+  padding: 5px;
+}
+
+blockquote footer {
+  text-align: right;
+  font-size: 20px;
+}
+
+footer p {
+  text-align: center;
+  padding: 20px;
+}
+
+#pictures {
+  display: flex;
+}
+
+#pictures img {
+  width: 95%;
+}
+
+#pictures .pictures-col {
+  flex: 50%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#pictures h3 {
+  text-align: center;
+}
+
+.timeline-item {
+  padding: 20px;
+  position: relative;
+  border-left: 2px solid white;
+}
+
+.timeline-item h2 {
+  padding-top: 10px;
+}
+
+.timeline-item:before {
+  content: attr(data-date);
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 12px;
+}
+
+.timeline-item:after {
+  content: '';
+  background: white;
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 18px;
+  left: -6px;
+  border-radius: 10px;
+}
+
+.photos {
+  display: flex;
+}
+
+.photos img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.photos .photos-col {
+  flex: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}

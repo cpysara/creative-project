@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+     Name: Pui Yan Chan
+     Date: November 10, 2019
+     Section: CSE 154 AA
+     This is the index.html page for my Creative Project 4.
+     It displays a responsive note-taking app in which users can add and remove notes.
+-->
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+    <title>A Simple Note-Taking App</title>
+  </head>
+
+  <body>
+    <header id="short-header">
+      <form>
+        <div id="add-quick">
+          <!-- This image was retrieved from https://www.flaticon.com/free-icon/plus_149688/ -->
+          <button id="add-btn"><img src="img/add.png" alt="add to-do item button" /></button>
+          <input id="add-title" class="add-input" type="text" placeholder="Note Title"
+           maxlength="50" required/>
+        </div>
+        <textarea id="add-content" class="add-input hidden"></textarea>
+      </form>
+    </header>
+
+    <main>
+
+      <section id="notes-container">
+        <h1>All Notes</h1>
+        <p id="no-notes" class="hidden">You don't have any notes</p>
+        <p id="fetch-error" class="hidden">Fetch Error: Please try again. If you are using Chrome, please start Chrome in incognito mode or disable the extensions.</p>
+        <ul id="notes-list"></ul>
+      </section>
+
+      <section id="modal" class="hidden">
+        <div id="modal-body">
+          <h2>Error</h2>
+          <p>Please try again.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Portions of this page © 2019 Sara Chan and Icons made by
+        <a href="https://www.flaticon.com/authors/gregor-cresnar">Gregor Cresnar</a> and
+        <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> from
+        <a href="https://www.flaticon.com/">Flaticon</a>
+      </p>
+    </footer>
+  </body>
+
+</html>

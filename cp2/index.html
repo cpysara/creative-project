@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+     Name: Pui Yan Chan
+     Date: October 15, 2019
+     Section: CSE 154 AA
+     This is the index.html page for my Creative Project 2.
+     It displays a responsive to-do list in which users can add and remove to-do items.
+-->
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+    <title>A Simple To-Do List</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- This image was retrieved from https://www.flaticon.com/free-icon/plus_149688/ -->
+      <button id="add-btn"><img src="img/add.png" alt="add to-do item button" /></button>
+      <input id ="add-input" type="text" placeholder="Enter a new to-do item" maxlength="50" />
+    </header>
+
+    <main>
+      <section id="to-do-list-container" class="list-container">
+        <h1>To-Do Tasks</h1>
+        <p>You don't have any to-do items</p>
+        <ul id="to-do-list" class="task-list"></ul>
+      </section>
+      <section id="completed-list-container" class="list-container">
+        <h1>Completed Tasks</h1>
+        <p>You have not yet completed any tasks</p>
+        <ul id="completed-list" class="task-list"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Portions of this page © 2019 Sara Chan and Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar">Gregor Cresnar</a> and <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> from <a href="https://www.flaticon.com/">Flaticon</a>
+      </p>
+    </footer>
+  </body>
+
+</html>

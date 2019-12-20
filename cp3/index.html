@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+     Name: Pui Yan Chan
+     Date: October 26, 2019
+     Section: CSE 154 AA
+     This is the index.html page for my Creative Project 3.
+     It displays the daily or weekly trending movies and TV shows.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+    <title>Trending Movies & TV Shows</title>
+  </head>
+  <body>
+    <header>
+      <h1>Trending Movies & TV Shows Right Now</h1>
+      <div id="btns-list">
+        <button id="daily-btn" class="link selected" disabled>Daily</button>
+        <button id="weekly-btn" class="link">Weekly</button>
+      </div>
+      <p id="error-msg" class="hidden">
+        Oops! There's something wrong with the API.
+        Please try again later :(
+      </p>
+    </header>
+
+    <section id="movies">
+      <h2>Movies</h2>
+      <section class="poster">
+      </section>
+    </section>
+
+    <section id="tv-shows">
+      <h2>TV Shows</h2>
+      <section class="poster">
+      </section>
+    </section>
+
+    <footer>
+      <p>
+        Powered by <a href="https://www.themoviedb.org/documentation/api">Movie DB API</a>
+      </p>
+    </footer>
+  </body>
+</html>

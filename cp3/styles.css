@@ -1,0 +1,88 @@
+/*
+     Name: Pui Yan Chan
+     Date: October 26, 2019
+     Section: CSE 154 AA
+     This is the styles.css for my Creative Project 3.
+     It describes the presentation of index.html page.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+  background-color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  margin: auto auto;
+  width: 80%;
+}
+
+h1 {
+  padding-top: 30px;
+  color: #B5BD68;
+  font-size: 36px;
+}
+
+h2 {
+  color: #81A2BE;
+  margin: 50px 20px 10px 20px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  text-decoration: underline;
+  margin-right: 20px;
+}
+
+img {
+  border-radius: 20px;
+}
+
+footer p {
+  padding: 20px;
+}
+
+body, button, a {
+  color: white;
+}
+
+h1, footer p, .poster p, #error-msg {
+  text-align: center;
+}
+
+button.selected {
+  color: gray;
+  text-decoration: none;
+  cursor: default;
+}
+
+.hidden {
+  display: none;
+}
+
+.poster, #btns-list {
+  display: flex;
+}
+
+.poster {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.poster div {
+  width: 200px;
+}
+
+.poster p {
+  margin: 5px 10px 20px 10px;
+}
+
+#btns-list {
+  justify-content: flex-end;
+}
+
+#error-msg {
+  color: red;
+}
